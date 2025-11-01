@@ -45,6 +45,12 @@ func (tm *TraderManager) AddTrader(cfg config.TraderConfig, coinPoolURL string, 
 		AsterUser:             cfg.AsterUser,
 		AsterSigner:           cfg.AsterSigner,
 		AsterPrivateKey:       cfg.AsterPrivateKey,
+		// 新增 OKX 字段
+		OKXAPIKey:             cfg.OKXAPIKey,
+		OKXSecretKey:          cfg.OKXSecretKey,
+		OKXPassphrase:         cfg.OKXPassphrase,
+		OKXTestnet:            cfg.OKXTestnet,
+
 		CoinPoolAPIURL:        coinPoolURL,
 		UseQwen:               cfg.AIModel == "qwen",
 		DeepSeekKey:           cfg.DeepSeekKey,
